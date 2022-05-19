@@ -15,6 +15,8 @@ class Strategy:
             place = random.randint(0, self.places)
         if self.strategy_place == 2: #wybór środkowego miejsca
             place = self.places // 2 +1
+        if self.strategy_place == 3: #wybór zawsze tego samego miejsca
+            place = 1
         self.places = self.places+1
         return place
 
